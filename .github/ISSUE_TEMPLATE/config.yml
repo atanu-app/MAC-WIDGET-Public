@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/atanu-app/MAC-WIDGET-Public/security/advisories/new
+    about: Please report security problems privately, not as a public issue.
+  - name: Install help
+    url: https://github.com/atanu-app/MAC-WIDGET-Public#install
+    about: Step-by-step instructions for opening KairoWidget the first time.

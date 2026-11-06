@@ -1,0 +1,60 @@
+name: Bug report
+description: Something in KairoWidget isn't working as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report this. Please don't include personal information such as project names, IP addresses or Wi-Fi names in screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: KairoWidget version
+      description: Finder → Applications → KairoWidget → Get Info.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac model
+      placeholder: "macOS 26.1, MacBook Air (M4)"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the problem?
+      options:
+        - Installing or opening the app
+        - CPU / Memory / Processes
+        - Network Access (ports) or Stop
+        - Network / Disk
+        - Battery
+        - Temperature / GPU & Fans
+        - Wi-Fi
+        - Alerts / notifications
+        - Menu bar / settings / Launch at Login
+        - Widget placement or appearance
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Optional. Drag images here.

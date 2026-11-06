@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest a widget or an improvement.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like KairoWidget to do?
+      description: Describe what you're trying to see or do, and why it matters to you.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could it work?
+      description: Optional — a sketch, a description, or an example from another app.
